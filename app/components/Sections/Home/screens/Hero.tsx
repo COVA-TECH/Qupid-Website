@@ -14,7 +14,7 @@ const Hero = () => {
 	return (
 		<section className="min-h-screen w-full  pt-32 sm:pt-44  ">
 			{!isTablet && (
-				<div className="absolute w-full  z-[-20] top-0 flex justify-between">
+				<div className="absolute w-full  z-[0] top-0 flex justify-between">
 					<img className="" src={backgrounds.loveBg} alt="" />
 					<img
 						className=" transform scale-x-[-1] "
@@ -23,7 +23,8 @@ const Hero = () => {
 					/>
 				</div>
 			)}
-			<div className="flex flex-col items-center px-5  gap-5 mb-5">
+
+			<div className="flex flex-col items-center px-5  gap-5 mb-5 z-[2] relative">
 				<h1 className="sm:text-center text-4xl leading-[2.5rem] font-bold sm:tracking-wider">
 					Discover Love, Build Friendships, and <br /> Share Unforgettable
 					Moments with
@@ -43,7 +44,7 @@ const Hero = () => {
 					</Button>
 				</div>
 			</div>
-			<div className="flex justify-center items-center">
+			<div className="flex justify-center items-center z-[2] relative lg:px-20">
 				{isTablet ? (
 					<img className=" sm:w-[40rem]" src={siteImages.heroMobile} alt="" />
 				) : (

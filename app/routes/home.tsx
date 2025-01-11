@@ -3,8 +3,8 @@ import HomePage from "~/components/Sections/Home/Home";
 
 export function meta({}: Route.MetaArgs) {
 	return [
-		{ title: "New React Router App" },
-		{ name: "description", content: "Welcome to React Router!" },
+		{ title: "Qupid app" },
+		{ name: "description", content: "Qupid app description" },
 	];
 }
 
