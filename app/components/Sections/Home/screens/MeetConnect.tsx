@@ -1,5 +1,5 @@
-import siteIcons from "@/assets/icons/siteIcons";
-import siteImages from "@/assets/images/siteImages";
+import siteIcons from "~/assets/icons/siteIcons";
+import siteImages from "~/assets/images/siteImages";
 
 const cardComps = [
 	{
@@ -8,12 +8,12 @@ const cardComps = [
 		cardText: `Discover profiles of individuals who share your interests, values, and goals—whether you're looking for love or a new best friend`,
 	},
 	{
-		icon: siteIcons.hearthCircle,
+		icon: siteIcons.eventIcon,
 		cardTitle: "Join Events That Inspire You",
 		cardText: `Explore local gatherings, from hobby-based meetups to exciting social events, tailored to your interests and lifestyle`,
 	},
 	{
-		icon: siteIcons.hearthCircle,
+		icon: siteIcons.messageICon,
 		cardTitle: "Chat and Build Connections",
 		cardText: `Easily start conversations with people you connect with, turning simple chats into meaningful relationships that grow over time`,
 	},

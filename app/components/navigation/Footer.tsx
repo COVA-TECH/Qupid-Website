@@ -29,7 +29,7 @@ const footerLinks = [
 	},
 ];
 
-const isTablet = window.innerWidth < 1200;
+const isTablet = typeof window !== "undefined" && window.innerWidth < 1200;
 const Footer = () => {
 	return (
 		<footer className="w-full   bg-primary ">

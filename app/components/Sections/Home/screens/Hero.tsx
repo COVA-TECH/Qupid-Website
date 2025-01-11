@@ -25,7 +25,7 @@ const Hero = () => {
 			)}
 
 			<div className="flex flex-col items-center px-5  gap-5 mb-5 z-[2] relative">
-				<h1 className="sm:text-center text-4xl leading-[2.5rem] font-bold sm:tracking-wider">
+				<h1 className="text-center text-4xl leading-[2.5rem] font-bold sm:tracking-wider">
 					Discover Love, Build Friendships, and <br /> Share Unforgettable
 					Moments with
 					<span className="sm:block sm:rounded-3xl sm:bg-red-300 p-1 px-4 w-fit sm:mx-auto lg:mt-2">

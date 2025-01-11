@@ -3,8 +3,8 @@ import siteIcons from "~/assets/icons/siteIcons";
 import { Button } from "../ui/button";
 
 const NavBar = () => {
-	const isMobile = window.innerWidth < 768;
-	return <>{isMobile ? <MobileNav /> : <PcNav />}</>;
+	const isTablet = typeof window !== "undefined" && window.innerWidth < 1200;
+	return <>{isTablet ? <MobileNav /> : <PcNav />}</>;
 };
 export default NavBar;
 
