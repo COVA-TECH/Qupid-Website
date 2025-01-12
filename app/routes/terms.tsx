@@ -1,4 +1,4 @@
-import TermsConditions from "~/components/Sections/Terms/TermsConditions";
+import TermsConditions from "~/components/Pages/Terms/TermsConditions";
 
 const terms = () => {
 	return (

@@ -28,12 +28,13 @@ const HowItWorks = () => {
 	return (
 		<section className="relative mt-20">
 			<h2 className="text-center  font-bold text-3xl mb-10">How Qupid Works</h2>
-			<div className=" flex max-sm:flex-col relative w-full justify-center gap-5 lg:px-44">
+			<div className="grid lg:grid-cols-3 sm:grid-cols-2 relative w-full  justify-center gap-5 lg:px-44">
+				{/* <div className=" flex flex-col lg:flex-row relative w-full justify-center gap-5 lg:px-44"> */}
 				{HIW.map((item, index) => {
 					return (
 						<div
 							key={index}
-							className=" flex flex-col items-center w-full  gap-3"
+							className=" flex flex-col items-center w-full  gap-3 col-span-1   "
 						>
 							<h3 className="font-semibold text-xl text-center">
 								{item.title}

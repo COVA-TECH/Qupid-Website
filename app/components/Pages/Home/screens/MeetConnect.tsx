@@ -54,13 +54,13 @@ const MeetConnect = () => {
 				})}
 			</div>
 
-			<Discover />
+			<DesignedToHelp />
 		</section>
 	);
 };
 export default MeetConnect;
 
-const Discover = () => {
+const DesignedToHelp = () => {
 	return (
 		<div className=" flex flex-col sm:flex-row  gap-5 mt-10 lg:mt-20">
 			<div className="w-full  flex justify-center items-center">
@@ -75,7 +75,7 @@ const Discover = () => {
 						return (
 							<div
 								key={index}
-								className="bg-[#F5F5F5] rounded-lg flex flex-col gap-2 py-5 px-2 "
+								className="bg-[#F5F5F5] rounded-lg flex flex-col gap-2 py-10 px-4 sm:px-5  "
 							>
 								<h5 className="font-bold">{item.cardTitle}</h5>
 								<p>{item.cardText}</p>
