@@ -13,7 +13,7 @@ const cardComps = [
 		cardText: `Explore local gatherings, from hobby-based meetups to exciting social events, tailored to your interests and lifestyle`,
 	},
 	{
-		icon: siteIcons.messageICon,
+		icon: siteIcons.messageIcon,
 		cardTitle: "Chat and Build Connections",
 		cardText: `Easily start conversations with people you connect with, turning simple chats into meaningful relationships that grow over time`,
 	},
