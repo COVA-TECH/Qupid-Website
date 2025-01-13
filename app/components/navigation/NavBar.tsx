@@ -6,12 +6,12 @@ import { FaBars } from "react-icons/fa";
 
 import {
 	Drawer,
-	DrawerClose,
+	// DrawerClose,
 	DrawerContent,
-	DrawerDescription,
+	// DrawerDescription,
 	DrawerFooter,
 	DrawerHeader,
-	DrawerTitle,
+	// DrawerTitle,
 	DrawerTrigger,
 } from "~/components/ui/drawer";
 
