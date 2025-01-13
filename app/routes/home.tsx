@@ -8,6 +8,10 @@ export function meta({}: Route.MetaArgs) {
 	];
 }
 
+export interface HomeProps {
+	title: string;
+	description: string;
+}
 export default function Home() {
 	return (
 		<>
