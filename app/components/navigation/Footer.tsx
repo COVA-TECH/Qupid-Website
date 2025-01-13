@@ -6,26 +6,28 @@ import { Button } from "../ui/button";
 import { FaApple } from "react-icons/fa";
 import { FaGooglePlay } from "react-icons/fa";
 
+import { NavLink } from "react-router";
+
 const footerLinks = [
 	{
 		title: "Terms of Service",
-		href: "/terms-of-service",
+		href: "/terms-and-conditions",
 	},
 	{
 		title: "Privacy Policy",
-		href: "/terms-of-service",
+		href: "/privacy-policy",
 	},
 	{
 		title: "Cookie Policy",
-		href: "/terms-of-service",
+		href: "/cookie-policy",
 	},
 	{
 		title: "Safety tips",
-		href: "/terms-of-service",
+		href: "/safety-tips",
 	},
 	{
 		title: "Help & Support",
-		href: "/terms-of-service",
+		href: "/help-and-support",
 	},
 ];
 
@@ -59,22 +61,33 @@ const Footer = () => {
 					</div>
 				)}
 			</div>
-			<div className=" flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-4 h-auto py-10 border-t-2 border-white bg-primary text-white px-2 lg:px-20 sm:px-20">
-				<div className="col-span-1">
-					<img className="w-32" src={siteIcons.logo2} alt="qupid logo" />
+			<div className=" flex flex-col lg:grid lg:grid-cols-4 h-auto py-10 border-t-2 border-white bg-primary text-white px-2 lg:px-20 sm:px-20">
+				<div className="col-span-1 w-full">
+					<img
+						className="w-32  mx-auto"
+						src={siteIcons.logo2}
+						alt="qupid logo"
+					/>
 				</div>
-				<div className="col-span-1 lg:col-span-2">
-					<ul className="flex justify-center gap-0 flex-col lg:flex-row w-full sm:text-end lg:text-center">
+				<div className=" lg:col-span-2 w-full flex justify-center max-lg:my-5">
+					<ul className="lg:flex justify-center  lg:flex-row w-full lg:text-center max-lg:grid grid-cols-3">
 						{footerLinks.map((item, index) => {
 							return (
-								<li className="w-full" key={index}>
-									{item.title}{" "}
+								<li
+									className={`w-full  text-center  ${
+										index > 2 &&
+										footerLinks.length % 2 !== 0 &&
+										"max-lg:ml-[50%] max-lg:mt-5"
+									}`}
+									key={index}
+								>
+									<NavLink to={item.href}>{item.title}</NavLink>
 								</li>
 							);
 						})}
 					</ul>
 				</div>
-				<div className="col-span-1 flex justify-end">
+				<div className="col-span-1 flex justify-center lg:justify-end w-full">
 					<p>© [2024] COVA Technologies. All rights reserved.</p>
 				</div>
 			</div>

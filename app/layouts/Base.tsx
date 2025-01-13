@@ -1,14 +1,17 @@
 import {
+	Outlet,
 	isRouteErrorResponse,
 	Links,
 	Meta,
-	Outlet,
 	Scripts,
 	ScrollRestoration,
 } from "react-router";
 
-import type { Route } from "./+types/root";
-import stylesheet from "./app.css?url";
+import type { Route } from "../+types/root";
+import stylesheet from "../app.css?url";
+
+import NavBar from "~/components/navigation/NavBar";
+import Footer from "~/components/navigation/Footer";
 
 export const links: Route.LinksFunction = () => [
 	{ rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -42,10 +45,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 	);
 }
 
-export default function App() {
+export default function Base() {
 	return (
 		<>
+			<NavBar />
 			<Outlet />
+			<Footer />
 		</>
 	);
 }

@@ -28,6 +28,7 @@ const HowItWorks = () => {
 	return (
 		<section className="relative mt-20">
 			<h2 className="text-center  font-bold text-3xl mb-10">How Qupid Works</h2>
+
 			<div className="grid lg:grid-cols-3 sm:grid-cols-2 relative w-full  justify-center gap-5 lg:px-44">
 				{/* <div className=" flex flex-col lg:flex-row relative w-full justify-center gap-5 lg:px-44"> */}
 				{HIW.map((item, index) => {
