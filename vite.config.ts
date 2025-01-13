@@ -16,6 +16,9 @@ export default defineConfig({
 			"@": path.resolve(__dirname, "./app"),
 		},
 	},
+	build: {
+		outDir: "dist",
+	},
 });
 
 // import react from "@vitejs/plugin-react"
