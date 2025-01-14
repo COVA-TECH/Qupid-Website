@@ -3,7 +3,7 @@
 
 	"builds": [
 		{
-			"src": "dist",
+			"src": "app",
 			"use": "@vercel/static"
 		}
 	]
