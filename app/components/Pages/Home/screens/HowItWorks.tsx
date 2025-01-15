@@ -26,7 +26,7 @@ const HowItWorks = () => {
 	// const isMobile = useIsMobile();
 	const isTablet = typeof window !== "undefined" && window.innerWidth < 1200;
 	return (
-		<section className="relative ">
+		<section className="relative  px-2 sm:px-10 lg:px-20">
 			<h2 className="text-center  font-bold  text-3xl sm:text-5xl  mb-10">
 				How Qupid Works
 			</h2>
@@ -42,9 +42,9 @@ const HowItWorks = () => {
 							<h3 className="font-semibold text-xl text-center">
 								{item.title}
 							</h3>
-							<p className="px-5 text-center">{item.text}</p>
+							<p className="px-5 text-center  h-10 mb-2">{item.text}</p>
 							<img
-								className="h-[20rem] sm:h-[30rem] lg:h-[50rem]"
+								className="h-[20rem] sm:h-[30rem] lg:h-[50rem] "
 								src={item.image}
 								alt={item.alt}
 							/>

@@ -8,7 +8,7 @@ const Home = () => {
 	return (
 		<>
 			<Hero />
-			<section className="mb-20 flex flex-col gap-20  px-2 sm:px-10 lg:px-20">
+			<section className="mb-20 flex flex-col gap-20  ">
 				<MeetConnect />
 				<HowItWorks />
 				<Events />

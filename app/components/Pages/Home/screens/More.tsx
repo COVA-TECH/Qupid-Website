@@ -14,8 +14,8 @@ const More = () => {
 		},
 	];
 	return (
-		<section>
-			<h3 className="text-center font-bold text-3xl sm:text-5xl ">
+		<section className="px-2 sm:px-10 lg:px-20  ">
+			<h3 className="text-center font-bold text-3xl sm:text-5xl  mb-5 sm:mb-10 ">
 				More Than an App—A Gateway to Belonging.
 			</h3>
 			<div className="flex flex-col lg:flex-row px-2 w-full gap-5 lg:px-44">
