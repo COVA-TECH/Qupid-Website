@@ -35,8 +35,8 @@ const designedFor = [
 
 const MeetConnect = () => {
 	return (
-		<section className="px-5 lg:px-20 min-h-screen mt-10 ">
-			<h2 className="font-bold text-center text-2xl sm:text-4xl mb-10">
+		<section className="px-5 lg:px-20 min-h-screen  ">
+			<h2 className="font-bold text-center  text-3xl sm:text-5xl  mb-10">
 				Meet, Connect, and Belong
 			</h2>
 			<div className="grid grid-cols-1 gap-4 sm:grid-cols-3 ">
