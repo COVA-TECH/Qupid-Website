@@ -35,7 +35,7 @@ const designedFor = [
 
 const MeetConnect = () => {
 	return (
-		<section className="px-2 sm:px-10 lg:px-20min-h-screen  ">
+		<section className="px-2 sm:px-10 lg:px-20 min-h-screen  ">
 			<h2 className="font-bold text-center  text-3xl sm:text-5xl  mb-10">
 				Meet, Connect, and Belong
 			</h2>
@@ -62,8 +62,8 @@ export default MeetConnect;
 
 const DesignedToHelp = () => {
 	return (
-		<div className=" flex flex-col sm:flex-row  gap-5 mt-10 lg:mt-20">
-			<div className="w-full  flex justify-center items-center">
+		<div className=" flex flex-col sm:flex-row  mt-10 lg:mt-20">
+			<div className="w-full  flex justify-center items-center ">
 				<img className="lg:h-[40rem]" src={siteImages.app1} alt="qupid app" />
 			</div>
 			<div className="w-full ">

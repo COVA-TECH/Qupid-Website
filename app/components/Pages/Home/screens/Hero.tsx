@@ -44,12 +44,13 @@ const Hero = () => {
 					</Button>
 				</div>
 			</div>
-			<div className="flex justify-center items-center z-[2] relative lg:px-20">
-				{isTablet ? (
+			<div className="flex justify-center items-center z-[2] relative px-5 lg:px-20 pt-5">
+				{/* {isTablet ? (
 					<img className=" sm:w-[40rem]" src={siteImages.heroMobile} alt="" />
 				) : (
 					<img src={siteImages.heroPc} alt="" />
-				)}
+				)} */}
+				<img src={siteImages.heroPc} alt="" />
 			</div>
 		</section>
 	);

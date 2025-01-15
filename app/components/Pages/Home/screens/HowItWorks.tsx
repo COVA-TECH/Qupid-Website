@@ -31,13 +31,13 @@ const HowItWorks = () => {
 				How Qupid Works
 			</h2>
 
-			<div className="grid lg:grid-cols-3 sm:grid-cols-2 relative w-full  justify-center gap-5 lg:px-44">
+			<div className="grid lg:grid-cols-3 sm:grid-cols-2 relative  w-full  justify-center gap-5 lg:px-44 ">
 				{/* <div className=" flex flex-col lg:flex-row relative w-full justify-center gap-5 lg:px-44"> */}
 				{HIW.map((item, index) => {
 					return (
 						<div
 							key={index}
-							className=" flex flex-col items-center w-full  gap-3 col-span-1   "
+							className=" flex flex-col items-center w-full  gap-3 col-span-1 z-10 relative  "
 						>
 							<h3 className="font-semibold text-xl text-center">
 								{item.title}
@@ -52,7 +52,7 @@ const HowItWorks = () => {
 					);
 				})}
 				{isTablet || (
-					<div className="absolute bottom-0 -z-10 h-[70%] w-[90%] right-[5%] rounded-[70px] bg-black"></div>
+					<div className=" absolute bottom-0 -z-1  h-[70%] w-[90%] right-[5%] rounded-[70px] bg-black"></div>
 				)}
 			</div>
 		</section>
